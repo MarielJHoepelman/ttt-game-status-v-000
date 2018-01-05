@@ -29,3 +29,13 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+  if full_board.include? (X)
+    return true
+  elsif full_board.include? (O)
+    return true
+  else return false
+  end
+end
