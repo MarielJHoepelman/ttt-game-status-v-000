@@ -31,11 +31,7 @@ def won?(board)
 end
 
 def full?(board)
-  full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-  if won?(board) == false
-    return draw
-  elsif full_board.include?(X) || full_board.include?(O)
-    return true
-  else return false
+  board.each do |element|
+    return false
   end
 end
