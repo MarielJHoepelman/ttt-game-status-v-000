@@ -62,7 +62,7 @@ end
 def winner(board)
   win_combination = won?(board)
  if win_combination
-  return board[win_combination[0]]
+  return board[win_combination.first]
  else
    return nil
  end
