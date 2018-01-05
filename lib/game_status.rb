@@ -58,3 +58,11 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+ if won?(board).include?(X) || won?(board).include?(O)
+   return true
+ elsif !won?(board)
+   retun nil 
+ end
+end
