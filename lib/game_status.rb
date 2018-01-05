@@ -60,8 +60,10 @@ def over?(board)
 end
 
 def winner(board)
- if won?(board).include?(X) || won?(board).include?(O)
-   return true
+ if won?(board).include?(X) 
+   return X
+ elsif won?(board).include?(O)
+   return O
  elsif !won?(board)
    retun nil
  end
