@@ -61,9 +61,9 @@ end
 
 def winner(board)
   win_combination = won?(board)
- if win_combination.include?("X")
+ if win_combination && win_combination.include?("X")
    return "X"
- elsif win_combination.include?("O")
+ elsif win_combination && win_combination.include?("O")
    return "O"
  else
    return nil
