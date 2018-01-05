@@ -32,8 +32,8 @@ end
 
 def full?(board)
   full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-  if won?(board) == false 
-    return draw 
+  if won?(board) == false
+    return draw
   elsif full_board.include?(X) || full_board.include?(O)
     return true
   else return false
