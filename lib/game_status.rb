@@ -32,6 +32,8 @@ end
 
 def full?(board)
   board.each do |element|
-    return false
+    if element == " "
+      return false
+    end
   end
 end
